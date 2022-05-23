@@ -10,13 +10,13 @@ class Succ {
 	first(){
 
 		this.curent = a0;
-		return current;
+		return this.current;
 
 	}
 
 	curr(){
 
-		return current;
+		return this.current;
 
 	}
 
@@ -29,30 +29,30 @@ class Succ {
 
 	at(i){
 
-		current = 0;
-		let index = i;
-		while(current < i){
+		this.current = this.a0;
+		let index = 0;
+		while(index < i){
 
 			this.next();
-			i--;
+			index++;
 
 		}
-		return current;
+		return this.current;
 
 	}
 
 	print(n){
 
 
-		current = 0;
-		let index = i;
-		while(current < i){
+		this.current = this.a0;
+		let index = 0;
+		while(index < n){
 
 			console.log(this.next());
-			i--;
+			index++;
 
 		}
-		return current;
+		return this.current;
 
 	}
 }
@@ -69,7 +69,7 @@ class Arit extends Succ {
 	next(){
 
 		this.current = this.current + this.inc;
-		return current;
+		return this.current;
 
 	}
 
