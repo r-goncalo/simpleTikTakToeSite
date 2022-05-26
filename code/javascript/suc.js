@@ -46,6 +46,7 @@ class Succ {
 
 		this.current = this.a0;
 		let index = 0;
+		console.log(this.current);
 		while(index < n){
 
 			console.log(this.next());
